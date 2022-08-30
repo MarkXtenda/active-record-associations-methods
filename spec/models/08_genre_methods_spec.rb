@@ -11,8 +11,8 @@ describe 'Genre Methods' do
   it '#song_count' do
     @genre.songs << Song.create(name: "Something By That Person Who Sings Stuff")
     @genre.save
-
-    expect(@genre.song_count).to eq(4)
+    
+    expect(@genre.song_count).to eq(1)
   end
 
   it '#artist_count' do
